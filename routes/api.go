@@ -52,7 +52,6 @@ func RegisterAPIRoutes(r *gin.Engine) {
 
 			// 发送验证码
 			vcc := new(auth.VerifyCodeController)
-			authGroup.POST("/verify-codes/phone", middlewares.LimitPerRoute("20-H"), vcc.SendUsingPhone)
 			authGroup.POST("/verify-codes/email", middlewares.LimitPerRoute("20-H"), vcc.SendUsingEmail)
 			// 图片验证码
 			authGroup.POST("/verify-codes/captcha", middlewares.LimitPerRoute("50-H"), vcc.ShowCaptcha)
