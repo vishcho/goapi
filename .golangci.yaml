@@ -1,0 +1,55 @@
+run:
+  timeout: 5m # 設定運行超時時間
+  tests: true # 包括測試文件
+  concurrency: 4 # 設定並發執行的線程數
+
+linters:
+  disable:
+    - errcheck # 檢查程式碼中未處理的錯誤。
+  enable:
+    # 程式碼風格與格式
+    - goimports # 自動管理 Go 程式碼的 import 路徑，確保它們符合官方規範。
+    - gocritic # 檢查 Go 程式碼風格，包括命名規範、程式碼結構等，並提出改進建議。
+
+    # 潛在錯誤與不良實踐
+    - govet # 官方的 Go 靜態分析工具，用於檢查常見的編譯錯誤、潛在的 bug 等。
+    - staticcheck # 更嚴格的靜態分析工具，可以發現 govet 可能漏掉的潛在問題。
+    - gosimple # 檢查 Go 程式碼是否過於複雜，並提出簡化建議。
+    - gosec # 檢查 Go 程式碼中的安全漏洞，例如 SQL 注入、跨站腳本 (XSS) 等。
+
+    # 未使用的程式碼與資源
+    - deadcode # 檢查 Go 程式碼中的無用程式碼，例如永遠不會被執行的程式碼塊。
+    - unused # 檢查 Go 程式碼中未使用的變數、函式、結構體等。
+    - bodyclose # 檢查 HTTP response body 是否被正確關閉，以避免資源洩漏。
+
+    # 性能優化
+    - unconvert # 檢查 Go 程式碼中不必要的類型轉換，以提高性能。
+    - goconst # 檢查 Go 程式碼中重複的字串常量，建議使用單一常量來代替。
+    - prealloc # 檢查 Go 程式碼中是否可以預分配切片或 map 的容量，以減少動態分配的次數。
+    - ineffassign # 檢查 Go 程式碼中無效的賦值操作，例如將一個值賦給自身。
+
+    # 其他
+    - unparam # 檢查 Go 程式碼中未使用的函式參數。
+    - typecheck # 檢查 Go 程式碼中的類型錯誤。
+    - exportloopref # 檢查 Go 程式碼中是否將迴圈變量的引用傳遞給 goroutine。
+
+linters-settings:
+  gocritic:
+    disabled-checks:
+      - appendAssign # 檢查 append 的結果是否直接賦值回同一個切片。
+      - assignOp # 檢查是否可以合併賦值和運算。
+      - captLocal # 檢查閉包中捕獲的變量命名。
+      - commentFormatting # 檢查註釋格式。
+      - deprecatedComment # 檢查過時的註釋。
+      - exitAfterDefer # 檢查 defer 後是否直接 return 或 os.Exit。
+      - ifElseChain # 檢查過長的 if/else 鏈。
+      - singleCaseSwitch # 檢查只有一個 case 的 switch。
+  gosec:
+    excludes:
+      - G104 # 檢查未處理的 errors。
+      - G103 # 檢查 string to []byte
+
+issues:
+  exclude-use-default: false
+  max-issues-per-linter: 0
+  max-same-issues: 0
