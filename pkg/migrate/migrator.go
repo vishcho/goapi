@@ -2,9 +2,9 @@
 package migrate
 
 import (
-	"gohub/pkg/console"
-	"gohub/pkg/database"
-	"gohub/pkg/file"
+	"goapi/pkg/console"
+	"goapi/pkg/database"
+	"goapi/pkg/file"
 	"os"
 
 	"gorm.io/gorm"

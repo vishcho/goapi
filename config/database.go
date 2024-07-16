@@ -1,7 +1,7 @@
 package config
 
 import (
-	"gohub/pkg/config"
+	"goapi/pkg/config"
 )
 
 func init() {

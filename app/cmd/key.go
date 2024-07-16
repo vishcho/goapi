@@ -1,8 +1,8 @@
 package cmd
 
 import (
-	"gohub/pkg/console"
-	"gohub/pkg/helpers"
+	"goapi/pkg/console"
+	"goapi/pkg/helpers"
 
 	"github.com/spf13/cobra"
 )

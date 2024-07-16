@@ -1,9 +1,9 @@
 package cmd
 
 import (
-	"gohub/database/seeders"
-	"gohub/pkg/console"
-	"gohub/pkg/seed"
+	"goapi/database/seeders"
+	"goapi/pkg/console"
+	"goapi/pkg/seed"
 
 	"github.com/spf13/cobra"
 )

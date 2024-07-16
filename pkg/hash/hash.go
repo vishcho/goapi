@@ -2,7 +2,7 @@
 package hash
 
 import (
-	"gohub/pkg/logger"
+	"goapi/pkg/logger"
 
 	"golang.org/x/crypto/bcrypt"
 )

@@ -2,7 +2,7 @@
 package response
 
 import (
-	"gohub/pkg/logger"
+	"goapi/pkg/logger"
 	"net/http"
 
 	"github.com/gin-gonic/gin"

@@ -2,8 +2,8 @@ package cmd
 
 import (
 	"fmt"
-	"gohub/pkg/cache"
-	"gohub/pkg/console"
+	"goapi/pkg/cache"
+	"goapi/pkg/console"
 
 	"github.com/spf13/cobra"
 )

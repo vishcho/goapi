@@ -3,12 +3,12 @@ package verifycode
 
 import (
 	"fmt"
-	"gohub/pkg/app"
-	"gohub/pkg/config"
-	"gohub/pkg/helpers"
-	"gohub/pkg/logger"
-	"gohub/pkg/mail"
-	"gohub/pkg/redis"
+	"goapi/pkg/app"
+	"goapi/pkg/config"
+	"goapi/pkg/helpers"
+	"goapi/pkg/logger"
+	"goapi/pkg/mail"
+	"goapi/pkg/redis"
 	"strings"
 	"sync"
 )

@@ -2,12 +2,12 @@ package main
 
 import (
 	"fmt"
-	"gohub/app/cmd"
-	"gohub/app/cmd/make"
-	"gohub/bootstrap"
-	btsConig "gohub/config"
-	"gohub/pkg/config"
-	"gohub/pkg/console"
+	"goapi/app/cmd"
+	"goapi/app/cmd/make"
+	"goapi/bootstrap"
+	btsConig "goapi/config"
+	"goapi/pkg/config"
+	"goapi/pkg/console"
 	"os"
 
 	"github.com/spf13/cobra"

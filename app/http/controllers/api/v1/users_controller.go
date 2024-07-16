@@ -1,12 +1,12 @@
 package v1
 
 import (
-	"gohub/app/models/user"
-	"gohub/app/requests"
-	"gohub/pkg/auth"
-	"gohub/pkg/config"
-	"gohub/pkg/file"
-	"gohub/pkg/response"
+	"goapi/app/models/user"
+	"goapi/app/requests"
+	"goapi/pkg/auth"
+	"goapi/pkg/config"
+	"goapi/pkg/file"
+	"goapi/pkg/response"
 
 	"github.com/gin-gonic/gin"
 )

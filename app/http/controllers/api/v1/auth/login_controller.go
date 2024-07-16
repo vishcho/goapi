@@ -1,11 +1,11 @@
 package auth
 
 import (
-	v1 "gohub/app/http/controllers/api/v1"
-	"gohub/app/requests"
-	"gohub/pkg/auth"
-	"gohub/pkg/jwt"
-	"gohub/pkg/response"
+	v1 "goapi/app/http/controllers/api/v1"
+	"goapi/app/requests"
+	"goapi/pkg/auth"
+	"goapi/pkg/jwt"
+	"goapi/pkg/response"
 
 	"github.com/gin-gonic/gin"
 )

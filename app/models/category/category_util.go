@@ -1,9 +1,9 @@
 package category
 
 import (
-	"gohub/pkg/app"
-	"gohub/pkg/database"
-	"gohub/pkg/paginator"
+	"goapi/pkg/app"
+	"goapi/pkg/database"
+	"goapi/pkg/paginator"
 
 	"github.com/gin-gonic/gin"
 )

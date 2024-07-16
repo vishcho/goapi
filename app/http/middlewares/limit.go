@@ -1,10 +1,10 @@
 package middlewares
 
 import (
-	"gohub/pkg/app"
-	"gohub/pkg/limiter"
-	"gohub/pkg/logger"
-	"gohub/pkg/response"
+	"goapi/pkg/app"
+	"goapi/pkg/limiter"
+	"goapi/pkg/logger"
+	"goapi/pkg/response"
 	"net/http"
 
 	"github.com/gin-gonic/gin"

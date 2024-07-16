@@ -2,9 +2,9 @@
 package limiter
 
 import (
-	"gohub/pkg/config"
-	"gohub/pkg/logger"
-	"gohub/pkg/redis"
+	"goapi/pkg/config"
+	"goapi/pkg/logger"
+	"goapi/pkg/redis"
 	"strings"
 
 	"github.com/gin-gonic/gin"

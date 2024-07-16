@@ -1,8 +1,8 @@
 package cache
 
 import (
-	"gohub/pkg/config"
-	"gohub/pkg/redis"
+	"goapi/pkg/config"
+	"goapi/pkg/redis"
 	"time"
 )
 

@@ -3,8 +3,8 @@ package auth
 
 import (
 	"errors"
-	"gohub/app/models/user"
-	"gohub/pkg/logger"
+	"goapi/app/models/user"
+	"goapi/pkg/logger"
 
 	"github.com/gin-gonic/gin"
 )

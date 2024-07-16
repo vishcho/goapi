@@ -2,8 +2,8 @@
 package bootstrap
 
 import (
-	"gohub/app/http/middlewares"
-	"gohub/routes"
+	"goapi/app/http/middlewares"
+	"goapi/routes"
 	"net/http"
 	"strings"
 

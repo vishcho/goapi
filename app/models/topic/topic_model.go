@@ -2,10 +2,10 @@
 package topic
 
 import (
-	"gohub/app/models"
-	"gohub/app/models/category"
-	"gohub/app/models/user"
-	"gohub/pkg/database"
+	"goapi/app/models"
+	"goapi/app/models/category"
+	"goapi/app/models/user"
+	"goapi/pkg/database"
 )
 
 type Topic struct {

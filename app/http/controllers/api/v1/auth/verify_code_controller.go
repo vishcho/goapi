@@ -1,12 +1,12 @@
 package auth
 
 import (
-	v1 "gohub/app/http/controllers/api/v1"
-	"gohub/app/requests"
-	"gohub/pkg/captcha"
-	"gohub/pkg/logger"
-	"gohub/pkg/response"
-	"gohub/pkg/verifycode"
+	v1 "goapi/app/http/controllers/api/v1"
+	"goapi/app/requests"
+	"goapi/pkg/captcha"
+	"goapi/pkg/logger"
+	"goapi/pkg/response"
+	"goapi/pkg/verifycode"
 
 	"github.com/gin-gonic/gin"
 )

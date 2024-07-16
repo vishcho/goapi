@@ -1,7 +1,7 @@
 package factories
 
 import (
-	"gohub/app/models/link"
+	"goapi/app/models/link"
 
 	"github.com/bxcodec/faker/v3"
 )

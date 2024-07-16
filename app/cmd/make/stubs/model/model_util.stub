@@ -1,7 +1,7 @@
 package {{PackageName}}
 
 import (
-    "gohub/pkg/database"
+    "goapi/pkg/database"
 )
 
 func Get(idstr string) ({{VariableName}} {{StructName}}) {
@@ -16,7 +16,7 @@ func GetBy(field, value string) ({{VariableName}} {{StructName}}) {
 
 func All() ({{VariableNamePlural}} []{{StructName}}) {
     database.DB.Find(&{{VariableNamePlural}})
-    return 
+    return
 }
 
 func IsExist(field, value string) bool {

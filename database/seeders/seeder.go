@@ -1,7 +1,7 @@
 // Package seeders 存放数据填充文件
 package seeders
 
-import "gohub/pkg/seed"
+import "goapi/pkg/seed"
 
 func Initialize() {
 

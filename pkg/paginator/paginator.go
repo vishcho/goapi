@@ -3,8 +3,8 @@ package paginator
 
 import (
 	"fmt"
-	"gohub/pkg/config"
-	"gohub/pkg/logger"
+	"goapi/pkg/config"
+	"goapi/pkg/logger"
 	"math"
 	"strings"
 

@@ -2,8 +2,8 @@
 package factories
 
 import (
-	"gohub/app/models/user"
-	"gohub/pkg/helpers"
+	"goapi/app/models/user"
+	"goapi/pkg/helpers"
 
 	"github.com/bxcodec/faker/v3"
 )
